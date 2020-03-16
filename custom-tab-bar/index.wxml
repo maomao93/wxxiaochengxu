@@ -1,0 +1,9 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="tabbar">
+<text class="indexTabbarButton Button" bindtap="tabBarIndex" data-index="true">
+  首页
+</text>
+<text class="tabbarButton Button"  bindtap="tabBarIndex" data-index="false">
+  个人中心
+</text>
+</view>

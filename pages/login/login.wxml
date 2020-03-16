@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+
+<input class="weui-input" auto-focus placeholder="账户"/>
+<input class="weui-input" password  placeholder="密码"/>
+<button bindtap="loginBtn">登录</button>
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfoTap">{{defaultButton}}</button>

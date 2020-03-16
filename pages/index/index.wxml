@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper 
+      indicatorDots="true"
+       autoplay="true"
+        interval="3000" 
+        duration="1000" 
+      >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+ <view class="type-container">
+    <scroll-view class="type-navbar" scroll-x="true" scroll-left="{{cateScrollTop}}">
+        <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
+            <view id="{{item.id}}"  class="type-navbar-item" data-index="{{item.id}}" bindtap="navbarClick">
+                {{item.name}}
+            </view>
+            <text class="borderBottom" wx:if="{{borderBottom===item.id}}"></text>
+        </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="container">
+  <view>
+    <view><image src="{{userInfo.avatarUrl}}" /></view>
+    <view>{{userInfo.nickName}}</view>
+  </view>
+</view>

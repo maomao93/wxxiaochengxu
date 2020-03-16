@@ -1,0 +1,18 @@
+/* custom-tab-bar/index.wxss */
+.tabbar{
+  display: flex;
+}
+.Button{
+  text-align: center;
+  width:50%;
+  height: 48px;
+  line-height: 18px;
+  color: brown;
+}
+.indexTabbarButton{
+  background: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
+  
+}
+.tabbarButton{
+  background: linear-gradient(45deg,rgba(199,121,208,0.5),rgba(254,172,94,0.5),rgba(75,192,200,0.5));
+}
